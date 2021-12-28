@@ -1,8 +1,9 @@
 body {
+    background-color: #0D1117;
 }
 .clickable {
     cursor:pointer;
-    color:#234da7;
+    color:#4EA6FF;
 }
 input[type=text] {
     padding: 4px 4px;

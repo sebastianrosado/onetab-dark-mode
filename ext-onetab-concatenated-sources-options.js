@@ -72,7 +72,7 @@ function zt(t) {
 let Pt = navigator["language"] || navigator["userLanguage"];
 
 function Wt() {
-    let t = [ "ar", "he", "fa", "ps", "ur" ];
+    let t = ["ar", "he", "fa", "ps", "ur"];
     let e = Pt.split("-", 1)[0];
     return t.indexOf(e) >= 0 ? "rtl" : "ltr";
 }
@@ -131,7 +131,7 @@ function h(t) {
             paddingBottom: "24px",
             [`padding${Gt()}`]: "268px",
             fontSize: "18px",
-            color: "#777",
+            color: "#AFB4BB",
             fontWeight: "300",
             borderBottom: "1px dashed #ddd",
             marginBottom: "10px"
@@ -158,7 +158,7 @@ function y(t, e, n) {
     let o = document.createElement("div");
     Zt(o, "30px");
     o.style.position = "relative";
-    o.style.color = "#777";
+    o.style.color = "#AFB4BB";
     let r = document.createElement("img");
     r.src = t ? "images/twister-open.png" : "images/twister-closed" + (Ht() ? "" : "-rtl") + ".png";
     r.style.width = 48 / 2 + "px";
@@ -237,7 +237,7 @@ function A(t) {
     return t.toLowerCase();
 }
 
-let E = [ "com", "co.uk", "org.uk", "net", "org", "de", "ru", "info", "xyz", "nl" ];
+let E = ["com", "co.uk", "org.uk", "net", "org", "de", "ru", "info", "xyz", "nl"];
 
 function T(t) {
     let e = b(t);
@@ -384,7 +384,7 @@ function N(t) {
     return parseInt(t.match(/\d+/)[0]);
 }
 
-const G = [ ...new Array(30) ].map(((t, e) => parseInt(10 + Math.pow(1.6, e))));
+const G = [...new Array(30)].map(((t, e) => parseInt(10 + Math.pow(1.6, e))));
 
 function* J(t) {
     let e = 0;
@@ -426,7 +426,7 @@ function ne() {
                     [`padding${Gt()}`]: "36px"
                 },
                 children: {
-                    nn: tn("restoreWindow", Dt("optionTabGroupRestoreTitle"), [ {
+                    nn: tn("restoreWindow", Dt("optionTabGroupRestoreTitle"), [{
                         settingValue: "newWindow",
                         title: Dt("optionTabGroupRestoreNewWindow")
                     }, {
@@ -435,24 +435,24 @@ function ne() {
                     }, {
                         settingValue: "currentWindow",
                         title: Dt("optionTabGroupRestoreCurrentWindowAlways")
-                    } ]),
-                    on: tn("pinnedTabs", Dt("optionPinnedTabsTitle"), [ {
+                    }]),
+                    on: tn("pinnedTabs", Dt("optionPinnedTabsTitle"), [{
                         settingValue: "ignore",
                         title: Dt("optionPinnedTabsDontSend"),
                         rn: Dt("optionPinnedTabsDontSendDesc")
                     }, {
                         settingValue: "allow",
                         title: Dt("optionPinnedTabsAllow")
-                    } ], Dt("optionPinnedTabsNote")),
-                    un: tn("startupLaunch", Dt("optionStartupLaunchTitle"), [ {
+                    }], Dt("optionPinnedTabsNote")),
+                    un: tn("startupLaunch", Dt("optionStartupLaunchTitle"), [{
                         settingValue: "displayOneTab",
                         title: Dt("optionStartupLaunchDisplay")
                     }, {
                         settingValue: "none",
                         title: Dt("optionStartupLaunchNone"),
                         rn: Dt("optionStartupLaunchNoneDesc")
-                    } ]),
-                    ln: tn("restoreRemoval", Dt("optionRestoreRemovalTitle"), [ {
+                    }]),
+                    ln: tn("restoreRemoval", Dt("optionRestoreRemovalTitle"), [{
                         settingValue: "default",
                         title: Dt("optionRestoreRemovalDefault"),
                         rn: Dt("optionRestoreRemovalDefaultDesc")
@@ -460,15 +460,15 @@ function ne() {
                         settingValue: "keep",
                         title: Dt("optionRestoreRemovalKeep"),
                         rn: Dt("optionRestoreRemovalKeepDesc")
-                    } ]),
-                    an: tn("duplicates", Dt("optionDuplicatesTitle"), [ {
+                    }]),
+                    an: tn("duplicates", Dt("optionDuplicatesTitle"), [{
                         settingValue: "allow",
                         title: Dt("optionDuplicatesAllow")
                     }, {
                         settingValue: "reject",
                         title: Dt("optionDuplicatesReject"),
                         rn: Dt("optionDuplicatesRejectDesc")
-                    } ])
+                    }])
                 }
             })
         }

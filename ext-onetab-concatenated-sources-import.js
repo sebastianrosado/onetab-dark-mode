@@ -44,7 +44,7 @@ function h(t) {
             paddingBottom: "24px",
             [`padding${Gt()}`]: "268px",
             fontSize: "18px",
-            color: "#777",
+            color: "#AFB4BB",
             fontWeight: "300",
             borderBottom: "1px dashed #ddd",
             marginBottom: "10px"
@@ -71,7 +71,7 @@ function y(t, e, n) {
     let r = document.createElement("div");
     Zt(r, "30px");
     r.style.position = "relative";
-    r.style.color = "#777";
+    r.style.color = "#AFB4BB";
     let o = document.createElement("img");
     o.src = t ? "images/twister-open.png" : "images/twister-closed" + (Ht() ? "" : "-rtl") + ".png";
     o.style.width = 48 / 2 + "px";
@@ -738,7 +738,7 @@ function ne() {
                         children: {
                             info: P(undefined, "div", {
                                 style: {
-                                    color: "#777",
+                                    color: "#AFB4BB",
                                     paddingBottom: "10px"
                                 },
                                 textContent: Dt("pasteInUrlsInstructions")
@@ -766,7 +766,7 @@ function ne() {
                         children: {
                             H: P(undefined, "div", {
                                 style: {
-                                    color: "#777",
+                                    color: "#AFB4BB",
                                     paddingBottom: "10px"
                                 },
                                 textContent: Dt("exportThenImportNote")

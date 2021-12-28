@@ -72,7 +72,7 @@ function zt(e) {
 let Pt = navigator["language"] || navigator["userLanguage"];
 
 function Wt() {
-    let e = [ "ar", "he", "fa", "ps", "ur" ];
+    let e = ["ar", "he", "fa", "ps", "ur"];
     let o = Pt.split("-", 1)[0];
     return e.indexOf(o) >= 0 ? "rtl" : "ltr";
 }
@@ -131,7 +131,7 @@ function h(e) {
             paddingBottom: "24px",
             [`padding${Gt()}`]: "268px",
             fontSize: "18px",
-            color: "#777",
+            color: "#AFB4BB",
             fontWeight: "300",
             borderBottom: "1px dashed #ddd",
             marginBottom: "10px"
@@ -158,7 +158,7 @@ function y(e, o, t) {
     let i = document.createElement("div");
     Zt(i, "30px");
     i.style.position = "relative";
-    i.style.color = "#777";
+    i.style.color = "#AFB4BB";
     let c = document.createElement("img");
     c.src = e ? "images/twister-open.png" : "images/twister-closed" + (Ht() ? "" : "-rtl") + ".png";
     c.style.width = 48 / 2 + "px";
@@ -228,7 +228,7 @@ class eo {
         this.lo = 3;
         this.do = [];
     }
-    uo({po: e, ho: o, fo: t, bo: n, wo: i, xo: c, vo: a, yo: s, ko: r, Ao: m}) {
+    uo({ po: e, ho: o, fo: t, bo: n, wo: i, xo: c, vo: a, yo: s, ko: r, Ao: m }) {
         e.onmousedown = l => {
             if (!oo(l)) return;
             let d = false;
@@ -236,10 +236,10 @@ class eo {
                 event: l,
                 element: e,
                 u: null,
-                l: ({h: e, g: o, v: t, j: n}) => {
+                l: ({ h: e, g: o, v: t, j: n }) => {
                     d = r && r();
                 },
-                p: ({h: e, g: c, dx: a, dy: s, v: r, j: l, pageX: u, pageY: p}) => {
+                p: ({ h: e, g: c, dx: a, dy: s, v: r, j: l, pageX: u, pageY: p }) => {
                     if (!this.so && !d) {
                         if (Math.abs(a) > this.lo || Math.abs(s) > this.lo) {
                             this.so = true;
@@ -287,7 +287,7 @@ class eo {
                         this.do.filter((e => e !== t)).forEach((e => e.Eo.style.display = "none"));
                     }
                 },
-                m: ({h: e, g: o, A: t, T: n, v: i, j: r}) => {
+                m: ({ h: e, g: o, A: t, T: n, v: i, j: r }) => {
                     (async () => {
                         if (!this.so) {
                             c();
@@ -311,7 +311,7 @@ class eo {
             });
         };
     }
-    Lo({element: e, objectType: o, Eo: t, So: n}) {
+    Lo({ element: e, objectType: o, Eo: t, So: n }) {
         this.do.push({
             element: e,
             objectType: o,
@@ -341,7 +341,7 @@ function oo(e) {
 }
 
 class to {
-    constructor({parentElement: e, Go: o, value: t, Bo: n, fontWeight: i, Oo: c, Ro: a, Wo: s}) {
+    constructor({ parentElement: e, Go: o, value: t, Bo: n, fontWeight: i, Oo: c, Ro: a, Wo: s }) {
         this.parentElement = e;
         this.Wo = s;
         this.value = X(t);
@@ -374,7 +374,7 @@ class to {
         this.Po = r.Po.t;
         this.No(this.value, false, true);
         this.Go = o;
-        this.Po.onmousedown = e => {};
+        this.Po.onmousedown = e => { };
         this.Po.onmouseup = e => {
             if (this.Io) return true;
             let o = false;
@@ -523,7 +523,7 @@ function A(e) {
     return e.toLowerCase();
 }
 
-let E = [ "com", "co.uk", "org.uk", "net", "org", "de", "ru", "info", "xyz", "nl" ];
+let E = ["com", "co.uk", "org.uk", "net", "org", "de", "ru", "info", "xyz", "nl"];
 
 function T(e) {
     let o = b(e);
@@ -670,7 +670,7 @@ function N(e) {
     return parseInt(e.match(/\d+/)[0]);
 }
 
-const G = [ ...new Array(30) ].map(((e, o) => parseInt(10 + Math.pow(1.6, o))));
+const G = [...new Array(30)].map(((e, o) => parseInt(10 + Math.pow(1.6, o))));
 
 function* J(e) {
     let o = 0;
@@ -696,7 +696,7 @@ let nt, it;
 
 let rt = "ontouchstart" in window;
 
-function ot({event: e, element: o, u: t, l: n, p: i, m: c}) {
+function ot({ event: e, element: o, u: t, l: n, p: i, m: c }) {
     K = o;
     Q = t;
     V = n;
@@ -2032,7 +2032,7 @@ co.Xo = new Map;
 }
 
 class ao {
-    constructor({parent: e, label: o, Vo: t, Qo: n, isEnabled: i, Uo: c, className: a}) {
+    constructor({ parent: e, label: o, Vo: t, Qo: n, isEnabled: i, Uo: c, className: a }) {
         this.div = P(e, "div", {
             style: {
                 [`padding${Jt()}`]: t + "px",
@@ -2156,10 +2156,10 @@ class ro {
                                     let e = await Ft.ht("restoreRemoval");
                                     if (o || this.Ho.locked || e === "keep") {
                                         if (t) {
-                                            await Ft.jt([ {
+                                            await Ft.jt([{
                                                 url: this.url,
                                                 pinned: this.Jo
-                                            } ]);
+                                            }]);
                                         } else {
                                             let e = u;
                                             await Ft.qt(n, !!this.Jo, e);
@@ -2224,7 +2224,7 @@ class ro {
                 c.style.boxShadow = "2px 2px 16px #ddd";
                 c.style.backgroundColor = "rgba(255, 255, 255, 0.30)";
             },
-            xo: () => {},
+            xo: () => { },
             vo: () => {
                 c.style.boxShadow = "none";
                 c.style.backgroundColor = "none";
@@ -2406,7 +2406,7 @@ class mo {
                                     style: {
                                         display: "inline-block",
                                         fontSize: "26px",
-                                        color: "#777",
+                                        color: "#AFB4BB",
                                         fontWeight: "300",
                                         verticalAlign: "middle"
                                     },
@@ -2428,7 +2428,7 @@ class mo {
                                             style: {
                                                 fontSize: "11px",
                                                 fontWeight: "400",
-                                                color: "#888",
+                                                color: "#AFB4BB",
                                                 paddingTop: "0px",
                                                 paddingBottom: "2px"
                                             },
@@ -2463,7 +2463,7 @@ class mo {
                                             Vo: 30,
                                             Qo: (e, o) => {
                                                 o.textContent = Dt("pleaseWaitTripleDot");
-                                                Ft.Ft([ this.mn ], false).then((() => {
+                                                Ft.Ft([this.mn], false).then((() => {
                                                     Ut(o);
                                                     o.textContent = Dt("shareAsWebPage");
                                                 }));
@@ -2970,7 +2970,7 @@ class Co {
                 paddingBottom: "10px",
                 [`padding${Gt()}`]: "20px",
                 [`padding${Jt()}`]: "20px",
-                backgroundColor: "#fff"
+                backgroundColor: "#30363D"
             },
             children: {
                 ni: P(undefined, "div", {
