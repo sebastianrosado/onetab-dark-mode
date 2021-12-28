@@ -12,4 +12,10 @@
 
 ## Background Color
 
+### Main
+
 #0D1117 replaces #light-at-the-end-of-the-tunnel-white
+
+### Settings Box
+
+#30363d replaces #am-i-in-heaven-white
