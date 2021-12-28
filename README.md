@@ -1,1 +1,1 @@
-# onetab-dark-mode
+# Dark Mode for OneTab
